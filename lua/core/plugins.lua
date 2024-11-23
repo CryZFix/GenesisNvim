@@ -62,6 +62,13 @@ require("lazy").setup({
 	{ "ellisonleao/gruvbox.nvim", priority = 1000 , config = true, opts = ...},
 	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 
+    {
+      "max397574/better-escape.nvim",
+      config = function()
+        require("better_escape").setup()
+      end,
+    },
+
 	{
 	    'numToStr/Comment.nvim',
 	    opts = {
